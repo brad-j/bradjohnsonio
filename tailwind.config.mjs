@@ -6,7 +6,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Darker Grotesque', ...defaultTheme.fontFamily.sans],
+        sans: ['Archivo', ...defaultTheme.fontFamily.sans],
       },
     },
   },

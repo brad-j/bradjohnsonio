@@ -14,6 +14,9 @@ importers:
       '@astrojs/tailwind':
         specifier: ^5.1.2
         version: 5.1.2(astro@4.16.8(rollup@4.24.3)(typescript@5.6.3))(tailwindcss@3.4.14)
+      '@fontsource/archivo':
+        specifier: ^5.1.0
+        version: 5.1.0
       '@fontsource/darker-grotesque':
         specifier: ^5.1.0
         version: 5.1.0
@@ -325,6 +328,9 @@ packages:
     engines: {node: '>=12'}
     cpu: [x64]
     os: [win32]
+
+  '@fontsource/archivo@5.1.0':
+    resolution: {integrity: sha512-zusUDuLRWmNYi5DhaXado+uj9ip8IarqgUdUlXQOrEVVQbN1gpueWy0Qbxnn6DSfEXo2cNneMPlv7MtG+XU8Zg==}
 
   '@fontsource/darker-grotesque@5.1.0':
     resolution: {integrity: sha512-55L3ON9xEkm7cidiT6oieCAV27pHDAt3vp8bjG8OfgDlIwIgBQPVivZV1A8V+ZG+93D4iEYEG82Bsg2eRlca/g==}
@@ -2432,6 +2438,8 @@ snapshots:
 
   '@esbuild/win32-x64@0.21.5':
     optional: true
+
+  '@fontsource/archivo@5.1.0': {}
 
   '@fontsource/darker-grotesque@5.1.0': {}
 
