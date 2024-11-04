@@ -1,6 +1,7 @@
 ---
 import '@/styles/globals.css';
 import '@fontsource/darker-grotesque';
+import { Button } from '@/components/ui/button';
 ---
 
 <html lang="en">
@@ -12,8 +13,30 @@ import '@fontsource/darker-grotesque';
     <title>Brad Johnson</title>
   </head>
 
-  <body class="font-sans bg-[#FFF2E8] h-screen">
-    <main class="">
+  <body class="font-sans h-screen bg-bg">
+    <header
+      class="flex justify-between items-center py-3 px-24 border-b-4 border-border"
+    >
+      <h1 class="text-5xl font-semibold p-2">
+        <a href="/">Brad Johnson</a>
+      </h1>
+      <nav>
+        <ul class="flex text-lg gap-4">
+          <li>
+            <Button>
+              <a href="/projects">Projects</a>
+            </Button>
+          </li>
+          <li>
+            <Button>Resume</Button>
+          </li>
+          <li>
+            <Button>Contact</Button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
       <slot />
     </main>
   </body>

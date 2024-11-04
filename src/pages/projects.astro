@@ -1,0 +1,38 @@
+---
+import MainLayout from '../layouts/MainLayout.astro';
+
+import { Button } from '@/components/ui/button';
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from '@/components/ui/card';
+---
+
+<MainLayout>
+  <!-- <h1>Projects</h1> -->
+  <div class="w-1/3 mx-auto mt-6">
+    <Card>
+      <CardHeader>
+        <CardTitle>A blog CMS made with Laravel and Filament</CardTitle>
+        <CardDescription
+          >Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta,
+          sapiente totam iste enim a animi.</CardDescription
+        >
+      </CardHeader>
+      <CardContent>
+        <img
+          src="https://res.cloudinary.com/brad-dev/image/upload/v1730733589/syyge67hvedt0hzg4iph.png"
+          alt="Screenshot of the blog CMS"
+          class="border-2 border-border rounded-base"
+        />
+      </CardContent>
+      <CardFooter>
+        <Button variant="neutral">Button</Button>
+      </CardFooter>
+    </Card>
+  </div>
+</MainLayout>
