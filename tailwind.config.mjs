@@ -11,8 +11,8 @@ export default {
       },
       colors: {
         main: '#FFDC58',
-        mainAccent: '#ffc800', // not needed for shadcn components
-        overlay: 'rgba(0,0,0,0.8)', // background color overlay for alert dialogs, modals, etc.
+        mainAccent: '#ffc800',
+        overlay: 'rgba(0,0,0,0.8)',
 
         // light mode
         bg: '#FEF2E8',
