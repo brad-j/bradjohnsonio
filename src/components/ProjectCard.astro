@@ -1,0 +1,41 @@
+---
+import { Button } from '@/components/ui/button';
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from '@/components/ui/card';
+
+interface Props {
+  title: string;
+  description: string;
+  image: string;
+  image_alt: string;
+  link: string;
+  button_text: string;
+}
+
+const { title, description, image, image_alt, link, button_text } = Astro.props;
+---
+
+<Card>
+  <CardHeader>
+    <CardTitle>{title}</CardTitle>
+    <CardDescription>{description}</CardDescription>
+  </CardHeader>
+  <CardContent>
+    <img
+      src={image}
+      alt={image_alt}
+      class="border-2 border-border rounded-base"
+    />
+  </CardContent>
+  <CardFooter>
+    <Button variant="neutral" className="w-full">
+      <a href={link} target="_blank">{button_text}</a>
+    </Button>
+  </CardFooter>
+</Card>

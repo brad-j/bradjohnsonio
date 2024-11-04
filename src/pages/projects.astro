@@ -1,38 +1,18 @@
 ---
 import MainLayout from '../layouts/MainLayout.astro';
-
-import { Button } from '@/components/ui/button';
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from '@/components/ui/card';
+import ProjectCard from '@/components/ProjectCard.astro';
 ---
 
 <MainLayout>
   <!-- <h1>Projects</h1> -->
-  <div class="w-1/3 mx-auto mt-6">
-    <Card>
-      <CardHeader>
-        <CardTitle>A blog CMS made with Laravel and Filament</CardTitle>
-        <CardDescription
-          >Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta,
-          sapiente totam iste enim a animi.</CardDescription
-        >
-      </CardHeader>
-      <CardContent>
-        <img
-          src="https://res.cloudinary.com/brad-dev/image/upload/v1730733589/syyge67hvedt0hzg4iph.png"
-          alt="Screenshot of the blog CMS"
-          class="border-2 border-border rounded-base"
-        />
-      </CardContent>
-      <CardFooter>
-        <Button variant="neutral">Button</Button>
-      </CardFooter>
-    </Card>
+  <div class="grid grid-cols-3 gap-4 mt-6 px-8">
+    <ProjectCard
+      title="A blog CMS made with Laravel and Filament"
+      description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, sapiente totam iste enim a animi."
+      image="https://res.cloudinary.com/brad-dev/image/upload/v1730733589/syyge67hvedt0hzg4iph.png"
+      image_alt="Screenshot of the blog CMS"
+      link="https://github.com/brad-jonson/laravel-filament-blog"
+      button_text="View on GitHub"
+    />
   </div>
 </MainLayout>

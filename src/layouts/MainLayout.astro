@@ -15,23 +15,33 @@ import { Button } from '@/components/ui/button';
 
   <body class="font-sans h-screen bg-bg">
     <header
-      class="flex justify-between items-center py-3 px-24 border-b-4 border-border"
+      class="flex justify-between items-center py-3 px-24 border-b-4 border-border bg-[#DFE5F2]"
     >
       <h1 class="text-5xl font-semibold p-2">
         <a href="/">Brad Johnson</a>
       </h1>
       <nav>
-        <ul class="flex text-lg gap-4">
+        <ul class="flex text-lg gap-2">
           <li>
-            <Button>
-              <a href="/projects">Projects</a>
-            </Button>
+            <a
+              href="/projects"
+              class="hover:bg-main transition-all duration-300 px-3 py-1.5 rounded-base"
+              >Projects</a
+            >
           </li>
           <li>
-            <Button>Resume</Button>
+            <a
+              href="/resume"
+              class="hover:bg-main transition-all duration-300 px-3 py-1.5 rounded-base"
+              >Resume</a
+            >
           </li>
           <li>
-            <Button>Contact</Button>
+            <a
+              href="#"
+              class="hover:bg-main transition-all duration-300 px-3 py-1.5 rounded-base"
+              >Contact</a
+            >
           </li>
         </ul>
       </nav>
