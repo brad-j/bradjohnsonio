@@ -7,9 +7,17 @@ import react from '@astrojs/react';
 
 import playformCompress from '@playform/compress';
 
+import sitemap from '@astrojs/sitemap';
+
 // https://astro.build/config
 export default defineConfig({
-  integrations: [tailwind({
-    applyBaseStyles: false,
-  }), react(), playformCompress()]
+  site: 'https://bradjohnson.io',
+  integrations: [
+    tailwind({
+      applyBaseStyles: false,
+    }),
+    react(),
+    playformCompress(),
+    sitemap(),
+  ],
 });
