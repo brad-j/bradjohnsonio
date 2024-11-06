@@ -10,11 +10,11 @@ interface Props {
 const { title, link, icon } = Astro.props;
 ---
 
-<aside>
-  <Button className="uppercase text-lg font-semibold bg-[#A3E636]">
-    <a href={link} target="_blank" class="flex items-center gap-2">
-      <img src={icon} alt={title} class="w-6 h-6" />
-      {title}
-    </a>
-  </Button>
-</aside>
+<Button
+  className="uppercase text-lg font-semibold bg-[#A3E636] py-[24px] sm:py-0"
+>
+  <a href={link} target="_blank" class="flex items-center gap-2">
+    <img src={icon} alt={title} class="w-6 h-6" />
+    {title}
+  </a>
+</Button>
