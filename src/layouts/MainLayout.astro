@@ -2,15 +2,13 @@
 import '@/styles/globals.css';
 import { ViewTransitions } from 'astro:transitions';
 import Header from '@/components/Header.astro';
+import Footer from '@/components/Footer.astro';
 ---
 
 <html lang="en">
   <head>
     <meta charset="utf-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="preconnect" href="https://linkedin.com" />
-    <link rel="preconnect" href="https://github.com" />
-
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
     <link rel="sitemap" href="/sitemap-index.xml" />
@@ -20,12 +18,27 @@ import Header from '@/components/Header.astro';
       content="Senior Customer Success Manager sharing customer experience insights and coding projects. Explore my professional journey, development portfolio, and resume."
     />
     <ViewTransitions />
+    <!-- Google tag (gtag.js) -->
+    <script
+      type="text/partytown"
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-LMP5VP7HQ5"></script>
+    <script type="text/partytown">
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+
+      gtag('config', 'G-LMP5VP7HQ5');
+    </script>
   </head>
 
-  <body class="font-sans h-screen bg-bg">
+  <body class="font-sans min-h-screen bg-bg flex flex-col">
     <Header />
-    <main>
+    <main class="flex-1">
       <slot />
     </main>
+    <Footer />
   </body>
 </html>

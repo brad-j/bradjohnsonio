@@ -9,7 +9,8 @@ import playformCompress from '@playform/compress';
 
 import sitemap from '@astrojs/sitemap';
 
-// https://astro.build/config
+import partytown from '@astrojs/partytown';
+
 export default defineConfig({
   site: 'https://bradjohnson.io',
   integrations: [
@@ -19,5 +20,10 @@ export default defineConfig({
     react(),
     playformCompress(),
     sitemap(),
+    partytown({
+      config: {
+        forward: ['dataLayer.push'],
+      },
+    }),
   ],
 });
