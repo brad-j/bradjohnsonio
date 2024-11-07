@@ -13,12 +13,7 @@ const { title, link, icon, alt } = Astro.props;
 <Button
   className="uppercase text-lg font-semibold bg-[#A3E636] py-[24px] sm:py-0"
 >
-  <a
-    href={link}
-    rel="preconnect"
-    target="_blank"
-    class="flex items-center gap-2"
-  >
+  <a href={link} target="_blank" class="flex items-center gap-2">
     <img src={icon} alt={alt} class="w-6 h-6" />
     {title}
   </a>
