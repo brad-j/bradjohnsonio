@@ -85,7 +85,7 @@ const Resume = () => {
                 in C-level engagement and platform advocacy
               </li>
               <li>
-                Drove 40% increase in platform adoption through creation of
+                Drove 35% increase in platform adoption through creation of
                 custom integration solutions and automated workflows
               </li>
               <li>
