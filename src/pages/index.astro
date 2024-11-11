@@ -7,40 +7,42 @@ import SocialButton from '@/components/SocialButton.astro';
   <div
     class="flex flex-col w-full md:w-2/3 lg:w-1/2 mx-auto mt-8 md:mt-32 gap-4 px-4"
   >
-    <section
-      class="bg-main px-4 md:px-16 py-6 md:py-8 rounded-base border-4 border-border"
-    >
-      <h1 class="text-3xl md:text-4xl mb-4 font-semibold">Hi, I'm Brad</h1>
-      <div class="text-lg md:text-xl space-y-2">
-        <p>I'm a Sr. Technical Customer Success Manager at Cloudinary</p>
-        <p>
-          I also love to tinker with web tech and fancy myself a web dev
-          hobbyist. Checkout the <a
-            href="/projects"
-            class="underline hover:text-[#30F]">projects</a
-          > I'm working on.
-        </p>
-      </div>
-    </section>
-    <section class="flex flex-wrap justify-center gap-4">
-      <SocialButton
-        icon="../icons/linkedin.svg"
-        alt="LinkedIn Logo"
-        link="https://www.linkedin.com/in/bradjohnson0311/"
-        title="LinkedIn"
-      />
-      <SocialButton
-        icon="../icons/github.svg"
-        alt="GitHub Logo"
-        link="https://github.com/brad-j"
-        title="GitHub"
-      />
-      <SocialButton
-        icon="../icons/mail.svg"
-        alt="Email Logo"
-        link="mailto:brad@bradjohnson.io"
-        title="Email"
-      />
-    </section>
+    <div>
+      <h1 class="text-3xl md:text-6xl font-semibold mb-3">Hi, I'm Brad</h1>
+      <section
+        class="bg-main px-4 md:px-16 py-6 md:py-8 rounded-base border-4 border-border mb-3"
+      >
+        <div class="text-lg md:text-xl space-y-2">
+          <p>I am a Sr. Technical Customer Success Manager at Cloudinary</p>
+          <p>
+            I also love to tinker with web tech and fancy myself a web dev
+            hobbyist. Checkout the <a
+              href="/projects"
+              class="underline hover:text-[#30F]">projects</a
+            > I'm working on.
+          </p>
+        </div>
+      </section>
+      <section class="flex flex-wrap justify-end gap-4">
+        <SocialButton
+          icon="../icons/linkedin.svg"
+          alt="LinkedIn Logo"
+          link="https://www.linkedin.com/in/bradjohnson0311/"
+          title="LinkedIn"
+        />
+        <SocialButton
+          icon="../icons/github.svg"
+          alt="GitHub Logo"
+          link="https://github.com/brad-j"
+          title="GitHub"
+        />
+        <SocialButton
+          icon="../icons/mail.svg"
+          alt="Email Logo"
+          link="mailto:brad@bradjohnson.io"
+          title="Email"
+        />
+      </section>
+    </div>
   </div>
 </MainLayout>
