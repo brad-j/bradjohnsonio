@@ -36,7 +36,14 @@ import Footer from '@/components/Footer.astro';
     <script
       defer
       data-domain="gymcalc.app"
-      src="https://plausible.io/js/script.js"></script>
+      src="https://plausible.io/js/script.outbound-links.js"></script>
+    <script>
+      window.plausible =
+        window.plausible ||
+        function () {
+          (window.plausible.q = window.plausible.q || []).push(arguments);
+        };
+    </script>
   </head>
 
   <body class="font-sans min-h-screen bg-[#E2E4DD] flex flex-col">
