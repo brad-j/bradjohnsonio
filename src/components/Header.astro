@@ -1,14 +1,17 @@
 ---
-
+import ThemeIcon from "./ThemeIcon.astro";
 ---
 
-<header class="border-b-4 border-border bg-[#DFE5F2]">
-  <nav class="max-w-7xl mx-auto px-4 py-3">
+<header
+  class="border-b-4 border-[#2A3B4C] bg-[#DFE5F2] dark:bg-[#1A2632] dark:text-[#F5E6C8]"
+>
+  <nav class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
+    <div class="flex-1"><!-- Empty div for spacing --></div>
     <ul class="flex flex-wrap justify-center text-lg md:text-2xl gap-2">
       <li>
         <a
           href="/"
-          class="inline-block transition-all duration-200 px-2 md:px-3 py-1.5 rounded-base border-2 border-transparent hover:border-black hover:bg-yellow-300"
+          class="inline-block transition-all duration-200 px-2 md:px-3 py-1.5 rounded-base border-2 border-transparent hover:border-[#2A3B4C] hover:bg-[#F4B860] dark:hover:border-[#F5E6C8] dark:hover:bg-[#C27D3F] dark:hover:text-[#1A2632]"
         >
           Home
         </a>
@@ -16,7 +19,7 @@
       <li>
         <a
           href="/projects"
-          class="inline-block transition-all duration-200 px-2 md:px-3 py-1.5 rounded-base border-2 border-transparent hover:border-black hover:bg-yellow-300"
+          class="inline-block transition-all duration-200 px-2 md:px-3 py-1.5 rounded-base border-2 border-transparent hover:border-[#2A3B4C] hover:bg-[#F4B860] dark:hover:border-[#F5E6C8] dark:hover:bg-[#C27D3F] dark:hover:text-[#1A2632]"
         >
           Projects
         </a>
@@ -24,11 +27,14 @@
       <li>
         <a
           href="/blog"
-          class="inline-block transition-all duration-200 px-2 md:px-3 py-1.5 rounded-base border-2 border-transparent hover:border-black hover:bg-yellow-300"
+          class="inline-block transition-all duration-200 px-2 md:px-3 py-1.5 rounded-base border-2 border-transparent hover:border-[#2A3B4C] hover:bg-[#F4B860] dark:hover:border-[#F5E6C8] dark:hover:bg-[#C27D3F] dark:hover:text-[#1A2632]"
         >
           Blog
         </a>
       </li>
     </ul>
+    <div class="flex-1 flex justify-end">
+      <ThemeIcon />
+    </div>
   </nav>
 </header>
