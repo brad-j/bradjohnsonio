@@ -10,7 +10,7 @@ export default {
         sans: ['Archivo', ...defaultTheme.fontFamily.sans],
       },
       colors: {
-        main: '#FFDC58',
+        // main: '#FFDC58',
         mainAccent: '#ffc800',
         overlay: 'rgba(0,0,0,0.8)',
 
