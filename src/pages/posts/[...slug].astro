@@ -19,7 +19,11 @@ const { item } = Astro.props;
 ---
 
 <MarkdownWrapper frontmatter={item.data}>
-  <section class="max-w-4xl font-semibold mx-auto mt-10">
+  <section
+    class="max-w-4xl font-semibold mx-auto mt-10 bg-white dark:bg-[#1A2632] rounded-sm
+  shadow-[4px_4px_0px_0px_rgba(0,0,0,0.1)] dark:shadow-[4px_4px_0px_0px_rgba(245,230,200,0.1)]
+  border-2 border-[#111A22] dark:border-[#F5E6C8] px-10 py-6"
+  >
     <h1 class="text-4xl mb-4">{item.data.title}</h1>
     <p class="text-lg tracking-wide font-light">{item.data.body}</p>
   </section>
