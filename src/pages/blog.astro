@@ -12,9 +12,9 @@ const posts = await getCollection("posts");
     <ul>
       {
         posts.slice(0, 3).map((post) => (
-          <li>
+          <a href={`/posts/${post.slug}`}>
             <PostCard post={post} />
-          </li>
+          </a>
         ))
       }
     </ul>
